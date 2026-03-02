@@ -28,7 +28,7 @@ start:
 
     ; DS = CS
     push cs
-    pop ds   ; poop
+    pop ds   
 
     mov si, board
 
@@ -260,4 +260,5 @@ board:
 
 ; boot signature and padding to 512 bytes
 times 510-($-$$) db 0
+
 dw 0AA55h
